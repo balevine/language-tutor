@@ -6,18 +6,18 @@ function getCue(cues) {
 }
 
 function newCue() {
-  var cueDiv = document.getElementById("cue");
-  var tenseDiv = document.getElementById("tense");
+  var formElement = document.getElementById("form");
+  var tenseElement = document.getElementById("tense");
 
-  cueDiv.innerHTML = "";
-  tenseDiv.innerHTML = "";
+  formElement.innerHTML = "";
+  tenseElement.innerHTML = "";
 
   var personCue = getCue(person());
   var numberCue = getCue(number());
   var tenseCue = getCue(tense());
 
-  cueDiv.innerHTML = personCue + " " + numberCue;
-  tenseDiv.innerHTML = tenseCue;
+  formElement.innerHTML = personCue + " " + numberCue;
+  tenseElement.innerHTML = tenseCue;
 }
 
 function init() {
