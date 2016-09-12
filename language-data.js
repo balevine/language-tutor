@@ -26,7 +26,7 @@ function tense() {
     "Futuro",
     "Futuro Anteriore",
     "Condizionale",
-    "Condizionale Passato"
+    "Condizionale Passato",
     "Imperativo"
   ];
   return tense;
