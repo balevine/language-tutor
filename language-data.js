@@ -83,7 +83,7 @@ function verb() {
     "seminare",
     "costeggiare",
     "emergere",
-    "scoioccare",
+    "scioccare",
     "risalire",
     "accorgere",
     "scoppiare",
@@ -261,6 +261,12 @@ function verb() {
     "muovere",
     "comprare",
     "vendere",
+    "pagare",
+    "annoiare",
+    "infastidire",
+    "gridare",
+    "ululare",
+    "lamentare",
     "amare"
   ];
   return verb;
