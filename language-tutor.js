@@ -5,7 +5,7 @@ function createTenseSettings() {
 
     var checkbox = document.createElement('input');
     checkbox.type = "checkbox";
-    checkbox.name = "checkbox" + index;
+    checkbox.name = "tenseCheckboxes";
     checkbox.value = tenses;
     checkbox.id = "checkbox" + index;
 
@@ -31,6 +31,26 @@ function getCue(cues) {
   return cue;
 }
 
+function getActiveTenses() {
+  var checkboxes = document.getElementsByName("tenseCheckboxes");
+  var checkboxesChecked = [];
+  // loop over them all
+  for (var i=0; i<checkboxes.length; i++) {
+     // And stick the checked ones onto an array...
+     if (checkboxes[i].checked) {
+        checkboxesChecked.push(checkboxes[i].value);
+     }
+  }
+  // Return the array if it is non-empty, or null
+  return checkboxesChecked.length > 0 ? checkboxesChecked : null;
+}
+
+function getTense() {
+  var activeTenses = getActiveTenses();
+  var tense = getCue(activeTenses);
+  return tense;
+}
+
 function newCue() {
   var verbElement = document.getElementById("verb");
   var formElement = document.getElementById("form");
@@ -42,7 +62,7 @@ function newCue() {
 
   var verbCue = getCue(verb());
   var personCue = getCue(person());
-  var tenseCue = getCue(tense());
+  var tenseCue = getTense();
 
   verbElement.innerHTML = verbCue;
   formElement.innerHTML = personCue;
