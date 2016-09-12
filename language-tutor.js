@@ -6,16 +6,20 @@ function getCue(cues) {
 }
 
 function newCue() {
+  var verbElement = document.getElementById("verb");
   var formElement = document.getElementById("form");
   var tenseElement = document.getElementById("tense");
 
+  verbElement.innerHTML = "";
   formElement.innerHTML = "";
   tenseElement.innerHTML = "";
 
+  var verbCue = getCue(verb());
   var personCue = getCue(person());
   var numberCue = getCue(number());
   var tenseCue = getCue(tense());
 
+  verbElement.innerHTML = verbCue;
   formElement.innerHTML = personCue + " " + numberCue;
   tenseElement.innerHTML = tenseCue;
 }
