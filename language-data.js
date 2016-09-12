@@ -80,7 +80,7 @@ function verb() {
     "ordinare",
     "cantare",
     "giocare",
-    "seminare"
+    "seminare",
     "costeggiare",
     "emergere",
     "scoioccare",
@@ -260,8 +260,9 @@ function verb() {
     "respirare",
     "togliere",
     "muovere",
+    "comprare",
+    "vendere",
     "amare"
-    
   ];
   return verb;
 }
