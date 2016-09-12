@@ -21,7 +21,7 @@ function tense() {
     "Presente Progressiva",
     "Passato Progressiva",
     "Imperfetto",
-    "Passato Prossimmo",
+    "Passato Prossimo",
     "Trapassato",
     "Futuro",
     "Futuro Anteriore",
@@ -267,6 +267,8 @@ function verb() {
     "gridare",
     "ululare",
     "lamentare",
+    "promettere",
+    "stancare",
     "amare"
   ];
   return verb;
