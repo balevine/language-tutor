@@ -11,6 +11,8 @@ function createTenseSettings() {
 
     settings.appendChild(checkbox);
 
+    document.getElementById(checkbox.id).checked = true;
+
     var newlabel = document.createElement("label");
     newlabel.setAttribute("for",checkbox.id);
     newlabel.innerHTML = tenses;
