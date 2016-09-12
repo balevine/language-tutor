@@ -1,16 +1,16 @@
 function person() {
   var person = [
-    "First Person",
-    "Second Person",
-    "Third Person"
+    "Primo",
+    "Secondo",
+    "Terzo"
   ];
   return person;
 }
 
 function number() {
     var number = [
-      "Singular",
-      "Plural"
+      "Singolare",
+      "Plurale"
     ];
     return number;
 }
