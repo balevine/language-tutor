@@ -269,6 +269,11 @@ function verb() {
     "lamentare",
     "promettere",
     "stancare",
+    "raggiungere",
+    "aggiungere",
+    "evitare",
+    "scivolare",
+    "cadere",
     "amare"
   ];
   return verb;
