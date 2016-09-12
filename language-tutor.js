@@ -41,14 +41,25 @@ function getActiveTenses() {
         checkboxesChecked.push(checkboxes[i].value);
      }
   }
-  // Return the array if it is non-empty, or null
-  return checkboxesChecked.length > 0 ? checkboxesChecked : null;
+
+  if (checkboxesChecked.length == 0) {
+    alert("You must select at least one tense.");
+  }
+
+  return checkboxesChecked;
 }
 
 function getTense() {
   var activeTenses = getActiveTenses();
-  var tense = getCue(activeTenses);
-  return tense;
+
+  if (activeTenses.length > 0) {
+    var tense = getCue(activeTenses);
+  }
+  else {
+    var tense = "";
+  }
+
+  return tense
 }
 
 function newCue() {
@@ -63,6 +74,10 @@ function newCue() {
   var verbCue = getCue(verb());
   var personCue = getCue(person());
   var tenseCue = getTense();
+
+  if (tenseCue == "") {
+    return
+  }
 
   verbElement.innerHTML = verbCue;
   formElement.innerHTML = personCue;
