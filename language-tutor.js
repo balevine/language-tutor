@@ -1,3 +1,27 @@
+function createTenseSettings() {
+  var tenses = tense();
+  tenses.forEach(function(tenses, index) {
+    var settings = document.getElementById("settings")
+
+    var checkbox = document.createElement('input');
+    checkbox.type = "checkbox";
+    checkbox.name = "checkbox" + index;
+    checkbox.value = tenses;
+    checkbox.id = "checkbox" + index;
+
+    settings.appendChild(checkbox);
+
+    var newlabel = document.createElement("label");
+    newlabel.setAttribute("for",checkbox.id);
+    newlabel.innerHTML = tenses;
+    settings.appendChild(newlabel);
+
+    var linebreak = document.createElement("br");
+    settings.appendChild(linebreak);
+
+  });
+}
+
 function getCue(cues) {
   var length = cues.length - 1;
   var randomValue = Math.floor(Math.random() * (length + 1));
@@ -29,6 +53,7 @@ function newCue() {
 function init() {
   var button = document.getElementById("cueButton");
   button.onclick = newCue;
+  createTenseSettings();
 }
 
 window.onload = init;
