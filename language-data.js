@@ -410,6 +410,13 @@ function verb() {
     "nevicare",
     "soffrire",
     "puzzare",
+    "disegnare",
+    "tifare",
+    "appendere",
+    "riattaccare",
+    "constringere",
+    "contrassegnare",
+    "legare",
     "amare"
   ];
   return verb;
