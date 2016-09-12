@@ -3,12 +3,20 @@ h1 {
 }
 
 #main {
-  font-size: 200%;
   text-align: center;
 }
 
 #cueButton {
-  font-size: 100%;
+  font-size: 1em;
   height: 2em;
   width: 10em;
+}
+
+p.dynamicCue {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+p.staticCue {
+  font-size: 1em;
 }

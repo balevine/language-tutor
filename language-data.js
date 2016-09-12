@@ -1,18 +1,13 @@
 function person() {
   var person = [
-    "Primo",
-    "Secondo",
-    "Terzo"
+    "Io",
+    "Tu",
+    "Lei",
+    "Noi",
+    "Voi",
+    "Loro"
   ];
   return person;
-}
-
-function number() {
-    var number = [
-      "Singolare",
-      "Plurale"
-    ];
-    return number;
 }
 
 function tense() {

@@ -16,12 +16,14 @@ function newCue() {
 
   var verbCue = getCue(verb());
   var personCue = getCue(person());
-  var numberCue = getCue(number());
   var tenseCue = getCue(tense());
 
   verbElement.innerHTML = verbCue;
-  formElement.innerHTML = personCue + " " + numberCue;
+  formElement.innerHTML = personCue;
   tenseElement.innerHTML = tenseCue;
+
+  var button = document.getElementById("cueButton");
+  button.innerHTML = "Dammi un altro!"
 }
 
 function init() {
