@@ -17,16 +17,17 @@ function number() {
 
 function tense() {
   var tense = [
-    "Present",
-    "Present Progressive",
-    "Past Progressive",
-    "Imperfect",
-    "Simple Past",
-    "Past Perfect",
-    "Future",
-    "Future Perfect",
-    "Conditional",
-    "Conditional Past"
+    "Presente",
+    "Presente Progressiva",
+    "Passato Progressiva",
+    "Imperfetto",
+    "Passato Prossimmo",
+    "Trapassato",
+    "Futuro",
+    "Futuro Anteriore",
+    "Condizionale",
+    "Condizionale Passato"
+    "Imperativo"
   ];
   return tense;
 }
