@@ -359,7 +359,7 @@ function verb() {
     "uccidere",
     "ammazzare",
     "fissare",
-    "bruciare";
+    "bruciare",
     "ricordare",
     "sfidare",
     "dipingere",
