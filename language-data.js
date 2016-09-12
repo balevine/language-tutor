@@ -179,7 +179,6 @@ function verb() {
     "incontrare",
     "conoscere",
     "odiare",
-    "fastidiare"
     "ascoltare",
     "sembrare",
     "sentire",
