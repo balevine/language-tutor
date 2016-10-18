@@ -17,12 +17,15 @@ function tense() {
     "Passato Progressiva",
     "Imperfetto",
     "Passato Prossimo",
+    "Passato Remoto",
     "Trapassato",
     "Futuro",
     "Futuro Anteriore",
     "Condizionale",
     "Condizionale Passato",
-    "Imperativo"
+    "Imperativo",
+    "Congiuntivo Presente",
+    "Congiuntivo Passato"
   ];
   return tense;
 }
