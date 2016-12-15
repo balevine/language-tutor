@@ -23,9 +23,12 @@ function tense() {
     "Futuro Anteriore",
     "Condizionale",
     "Condizionale Passato",
-    "Imperativo",
+    "Imperativo Informale",
+    "Imperativo Formale",
     "Congiuntivo Presente",
-    "Congiuntivo Passato"
+    "Congiuntivo Passato",
+    "Congiuntivo Imperfetto",
+    "Congiuntivo Trapassato"
   ];
   return tense;
 }
